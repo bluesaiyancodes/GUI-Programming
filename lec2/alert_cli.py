@@ -1,0 +1,44 @@
+import argparse
+import sys
+import time
+
+
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
+    sys.stderr.reconfigure(encoding="utf-8")
+
+
+def main():
+    parser = argparse.ArgumentParser(
+        description="지정한 시간이 지난 후 알림 메시지를 출력합니다."
+    )
+    parser.add_argument(
+        "seconds",
+        help="대기할 시간(초)",
+    )
+    parser.add_argument(
+        "message",
+        nargs="*",
+        help='선택적 알림 메시지(기본값: "알림!")',
+    )
+    args = parser.parse_args()
+
+    message = " ".join(args.message) if args.message else "알림!"
+
+    try:
+        secs = float(args.seconds)
+        if secs < 0:
+            raise ValueError("초는 0 이상이어야 합니다")
+        time.sleep(secs)
+    except KeyboardInterrupt:
+        print("\n알림이 취소되었습니다.")
+        return
+
+    print(message)
+
+
+if __name__ == "__main__":
+    main()
+
+
+
