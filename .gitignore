@@ -2,3 +2,7 @@ __pycache__/
 .venv/
 .venv_mac/
 *desktop.ini
+.DS_Store
+
+# assigment demos
+lec3/assignment1_demo.py
