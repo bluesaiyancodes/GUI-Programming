@@ -4,5 +4,5 @@ __pycache__/
 *desktop.ini
 .DS_Store
 
-# assigment demos
-lec3/assignment1_demo.py
+# demos
+*_demo.py
