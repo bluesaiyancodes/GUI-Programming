@@ -19,7 +19,7 @@ class startWindow(QWidget):
 
         # radio buttons
         self.male_radio = QRadioButton("남성", self)
-        self.male_radio.setGeometry(20, 60, 100, 30)
+        self.male_radio.setGeometry(200, 60, 100, 30)
 
         self.female_radio = QRadioButton("여성", self)
         self.female_radio.setGeometry(20, 100, 100, 30)

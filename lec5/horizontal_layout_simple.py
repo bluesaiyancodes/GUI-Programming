@@ -18,12 +18,18 @@ class startWindow(QWidget):
         # Create horizontal box layout
         layout = QHBoxLayout()
 
-        label = QLabel("수평 레이아웃 1", self)
-        label.setAlignment(Qt.AlignCenter)
-        label.setStyleSheet(
+        label1 = QLabel("수평 레이아웃 1", self)
+        label1.setAlignment(Qt.AlignTop)
+        label1.setStyleSheet(
             f"background-color: red; color: black; font-size: 24px;"
         )
-        layout.addWidget(label)
+        #layout.addWidget(label)
+
+        label2 = QLabel("수평 레이아웃 3", self)
+        label2.setAlignment(Qt.AlignBottom)
+        label2.setStyleSheet(
+            f"background-color: green; color: black; font-size: 24px;"
+        )
 
         label = QLabel("수평 레이아웃 2", self)
         label.setAlignment(Qt.AlignCenter)
@@ -31,6 +37,8 @@ class startWindow(QWidget):
             f"background-color: blue; color: black; font-size: 24px;"
         )
         layout.addWidget(label)
+        layout.addWidget(label1)
+        layout.addWidget(label2)
 
 
         self.setLayout(layout)
