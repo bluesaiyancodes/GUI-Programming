@@ -14,7 +14,7 @@ class startWindow(QMainWindow):
         self.count = 0  # 누른 키 개수
 
         # 하나의 signal 에 slot 3개 연결 (연결한 순서대로 호출됨)
-        self.key_typed.connect(self.show_key)       # slot 1
+      wh  self.key_typed.connect(self.show_key)       # slot 1
         self.key_typed.connect(self.show_message)   # slot 2
         self.key_typed.connect(self.count_key)      # slot 3
 

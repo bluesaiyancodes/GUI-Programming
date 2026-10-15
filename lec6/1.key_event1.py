@@ -16,18 +16,9 @@ class startWindow(QMainWindow):
         self.show()
 
     def keyPressEvent(self, event):
-        self.event_fn1()
-        self.event_fn2()
-        self.event_fn3()
-
-    def event1(self):
-        print("Event 1 triggered!")
-
-    def event2(self):
-        print("Event 2 triggered!")
-
-    def event3(self):
-        print("Event 3 triggered!")
+        if event.key() == Qt.Key.Key_Escape:
+            print("ESC key pressed!")
+            self.close()
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
