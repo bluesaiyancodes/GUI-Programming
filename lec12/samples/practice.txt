@@ -1,0 +1,7 @@
+Files practice
+파일 실습
+
+Select both this file and hello.txt in example 4.
+Drop either file onto example 8.
+
+Try a filename with spaces or Korean characters, too.

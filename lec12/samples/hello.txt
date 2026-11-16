@@ -1,0 +1,6 @@
+Hello, GUI Programming!
+안녕하세요! 파일 입출력 실습입니다.
+
+1. A file path tells Python where a file is.
+2. Reading a file returns its contents as text.
+3. UTF-8 supports English and Korean characters.
